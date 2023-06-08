@@ -1,11 +1,11 @@
 import React from "react"
 import Image from 'next/image'
+import { Button } from 'ui/Button'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = () => {
-   (
+const Home = () => (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
@@ -97,6 +97,8 @@ const Home = () => {
           </p>
         </a>
 
+        <Button />
+
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -115,7 +117,6 @@ const Home = () => {
         </a>
       </div>
     </main>
-  )
-}
+)
 
 export default Home

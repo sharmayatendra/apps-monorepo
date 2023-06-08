@@ -1,8 +1,7 @@
 import React from "react"
 import { Html, Head, Main, NextScript } from 'next/document'
 
-const Document = () => {
-   (
+const Document = () => (
     <Html lang="en">
       <Head />
       <body>
@@ -10,7 +9,6 @@ const Document = () => {
         <NextScript />
       </body>
     </Html>
-  )
-}
+)
 
 export default Document

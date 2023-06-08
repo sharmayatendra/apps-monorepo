@@ -1,11 +1,11 @@
 import React from "react"
 import Image from 'next/image'
+import { Button } from 'ui/Button'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
 
-const Home = () => {
-   (
+const Home = () => (
     <main
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
@@ -115,7 +115,6 @@ const Home = () => {
         </a>
       </div>
     </main>
-  )
-}
+)
 
 export default Home
