@@ -6,6 +6,7 @@
     "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
+    "test": "echo next-app test",
     "lint": "next lint"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.2",
+    "@apps-monorepo/design-system": "*",
     "typescript": "5.1.3"
   },
   "devDependencies": {
