@@ -1,15 +1,10 @@
 {
-  "extends": "tsconfig/nextjs.json",
+  "extends": "@apps-monorepo/tsconfig/nextjs.json",
   "compilerOptions": {
+    "jsx": "react-jsx",
     "baseUrl": ".",
     "noEmitHelpers": true
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
 }

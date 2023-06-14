@@ -1,7 +1,16 @@
+const path = require('path');
+
 module.exports = {
-  ...require('@apps-monorepo/eslint-config-custom/eslint-next.js'),
+  root: true,
+  extends: ['@apps-monorepo/eslint-config-custom'],
   parserOptions: {
-    tsconfigRootDir: __dirname,
-    project: './tsconfig.json',
+    project: path.join(__dirname, 'tsconfig.json'),
   },
-}
+  overrides: [
+    // Only uses Testing Library lint rules in test files
+    {
+      files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
+    },
+  ],
+  ignorePatterns: ['charts/*'],
+};

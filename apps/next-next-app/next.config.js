@@ -2,6 +2,6 @@
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@apps-monorepo/design-system'],
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
