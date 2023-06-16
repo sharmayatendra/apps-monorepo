@@ -1,0 +1,8 @@
+{
+  "extends": "@apps-monorepo/tsconfig/react-library.json",
+  "include": ["."],
+  "compilerOptions": {
+    "jsx": "react-jsx"
+  },
+  "exclude": ["dist", "build", "node_modules"]
+}
