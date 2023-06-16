@@ -24,8 +24,5 @@
     "@apps-monorepo/design-system": "*",
     "@apps-monorepo/eslint-config-custom": "*",
     "@apps-monorepo/tsconfig": "*"
-  },
-  "devDependencies": {
-    "next-transpile-modules": "^10.0.0"
   }
 }

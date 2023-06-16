@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "format": "prettier --write .",
-    "lint": "eslint \"**/*.ts*\" && yarn format",
+    "lint": "eslint \"**/*.{ts,js}*\" && yarn format",
     "generate:component": "turbo gen react-component"
   },
   "devDependencies": {
